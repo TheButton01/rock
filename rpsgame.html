@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Rock-paper-scissors-game/rpsgame.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container_content">
+            <header class="header">
+                <p class="header_logo">
+                    <span class="rock">Rock</span>
+                    <span class="paper">Paper</span>
+                    <span class="Scissors">Scissors</span>
+                </p>
+                <div class="header_scoreContent">
+                    <p class="header_scoreText">Score</p>
+                    <p class="header_scoreNum">0</p>
+                </div>
+            </header>
+            <div class="game_content"></div>
+            
+            <div class="gameContent_bg"></div>
+            <!--Game Text-->
+            <div class="youPicked">You Picked</div>
+            <div class="housePicked">The House Picked</div>
+            <!--Game Choice-->
+            <!--Paper-->
+            <div class="paper">
+                <div class="gameChoice_imagePaper">
+                    <img src="../Rock-paper-scissors-game/image/iconpaper.svg" alt="Paper Choice--">
+                </div>
+            </div>
+            <!--Rock-->
+            <div class="rock">
+                <div class="gameChoice_imagerock">
+                    <img src="../Rock-paper-scissors-game/image/iconrock.svg"
+                    onerror="this.onerror=null;this.src='../Rock-paper-scissors-game/image/iconrock.svg';" alt="Rock Choice--"/>
+                </div>
+            </div>
+            <!--Scissors-->
+            <div class="Scissors">
+                <div class="gameChoice_imageScissors">
+                    <img src="../Rock-paper-scissors-game/image/iconscissors.svg" alt="Scissors Choice">
+                </div>
+            </div>
+            <div class="gameChoice-isComputer">
+                <div class="gameContent__image">
+                    <span class="countdownText"></span>
+                    <img src="" class="gameChoiceImage" alt="Computer Choice" />
+                </div>
+        </div>
+        <!--Result-->
+        <div class="gamecontent_result">
+            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_aEFaHc.json"
+                           background='transparent'
+                           speed='1'
+                           style="width: 300px; height: 300px; position:absolute;"
+                           autoplay></lottie-player>
+            <span class="resultText">You Win</span>
+            <button class="resultButton">Play again</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="/rpsgame.js"></script>
+</body>
+</html>
